@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        footer{
+            background-color: aqua;
+            color: black;
+            padding: 15px;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="p-5 bg-primary text-white text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, deleniti.</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2" >
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="tablinks" onClick="openCity(event, 'London')" id="defaultOpen"><a href="#section1">HTML</a></li>
+                    <li class="tablinks" onClick="openCity(event, 'Paris')"><a href="#section2">CSS</a></li>
+                    <li class="tablinks" onClick="openCity(event, 'Tokyo')"><a href="#section3">Javascript</a></li>
+                </ul>
+            </div>
+
+            <div id="London" class="tabcontent col-sm-10" style="font-size: 20px;">
+                <u><h1 class="text-center">HTML</h1></u>
+                    <p>
+                        • HTML is the standard markup language for Web  <br>
+                        • With HTML you can create your own Website. <br>
+                        • HTML is easy to learn - You will enjoy it!
+                    </p><br>
+                    <h2>Basic Structure:-</h2>
+                    <pre>
+                        <span><</span><span>!DOCTYPE </span><span>html</span><span>></span>
+                        <span><</span><span>html</span><span>></span>
+                        <span><</span><span>head</span><span>></span>
+                        <span><</span><span>title</span><span>></span><span>First Web Page</span><span><</span><span>/</span><span>title</span><span>></span>
+                        <span><</span><span>/</span><span>head</span><span>></span>
+                        <span><</span><span>body</span><span>></span>
+                        <span>     //write down code</span>
+                        <span><</span><span>/</span><span>body</span><span>></span>
+                        <span><</span><span>/</span><span>html</span><span>></span>
+            </pre>
+            </div>
+
+            <div id="Paris" class="tabcontent col-sm-10" style="font-size: 20px;">
+                <u><h1 class="text-center">CSS</h1></u>
+                <p>
+                    • CSS is the language we use to style an HTML document. <br>
+                    • CSS describes how HTML elements should be displayed. <br>
+                    • This tutorial will teach you CSS from basic to advanced.</p><br>
+                <h2>CSS syntax:-</h2>
+                <p>A CSS rule consist of a swlwctor & a declaration block</p>
+                <pre class="display-1">
+                    p{
+                        color:red;
+                        text-align:center;
+                    }
+                </pre>
+                <h1 class="text-center">CSS selectors:-</h1>
+                <h2> 1. CSS element selector:-</h2>
+                <blockquote>The element selector selest HTML element based on the element name.</blockquote>
+                <pre class="display-1">
+                    p{
+                        color:red;
+                        text-align:center;
+                    }
+                </pre>
+                <h2> 2. CSS id selector:-</h2>
+                <blockquote>The id selector use the id attribute of HTML element to select a specific element. the id of an element is unique with a page so the id selector is used to select one unique element.</blockquote>
+                <pre class="display-1">
+                    #p{
+                        color:red;
+                        text-align:center;
+                    }
+                </pre>
+                <h2> 3. CSS class selector:-</h2>
+                <blockquote>the class selector selects HTMl element with a specific class attribute.</blockquote>
+                <pre class="display-1">
+                    .p{
+                        color:red;
+                        text-align:center;
+                    }
+                </pre>
+                <h2> 4. CSS Univarsal selector:-</h2>
+                <blockquote>The universal selectot(*) all HTML element on the page.</blockquote>
+                <pre class="display-1">
+                    *{
+                        color:red;
+                        text-align:center;
+                    }
+                </pre>
+                <h2> 5. CSS grouping selector:-</h2>
+                <blockquote>The grouping selector selects all the HTML element with the some style defination.</blockquote>
+                <pre class="display-1">
+                    p,h1,h2{
+                        color:red;
+                        text-align:center;
+                    }
+                </pre>
+                
+            </div>
+
+            <div id="Tokyo" class="tabcontent col-sm-10" style="font-size: 20px;">
+                <u><h1 class="text-center">Javascript</h1></u>
+                <p>
+                    • JavaScript is the world's most popular programming language. <br>
+                    • JavaScript is the programming language of the Web. <br>
+                    •  JavaScript is easy to learn. <br>
+                    • This tutorial will teach you JavaScript from basic to advanced. <br>
+                </p>
+
+                
+            </div>
+            
+        </div>
+    </div>
+        <div class="row text-center">
+                        <div class="col-sm-2"><i class="fa fa-instagram" style="font-size:50px; color:rgb(255, 0, 0)"></i></div>
+                        <div class="col-sm-2"><i class="fa fa-twitter" style="font-size:50px; color:rgb(0, 110, 255)"></i></div>
+                        <div class="col-sm-2"><i class="fa fa-whatsapp" style="font-size:50px; color:rgb(0, 255, 26)"></i></div>
+                        <div class="col-sm-2"><i class="fa fa-facebook" style="font-size:50px; color:rgb(0, 0, 255)"></i></div>
+                        <div class="col-sm-2"><i class="fa fa-snapchat" style="font-size:50px; color:rgb(217, 255, 0)"></i></div>
+                        <div class="col-sm-2"><i class="fa fa-telegram" style="font-size:50px; color:rgb(72, 130, 229)"></i></div>
+                    </div>
+
+    <footer class="container-fluid">
+        <div class="footer">@copyrightbybhaumikpanchal</div>
+    </footer>
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
